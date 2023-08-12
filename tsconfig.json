@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/", //место куда идет сборка, но мы исп вебпак так что это неважная строка
+    "noImplicitAny": true, // не позволяет НЕ типизировать данные - будет подсвечивать красным
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    // esModuleInterop позволяет работать с пакетами, которые используют
+    // common js как с обычными пакетами с помощью import
+    "allowSyntheticDefaultImports": true
+    // allowSyntheticDefaultImports позволяет исп импорты без звездочки
+    // и писать импорты даже если у пакет нет дефолтного испорта
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}

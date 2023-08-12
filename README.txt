@@ -1,0 +1,1 @@
+template for working with webpack, react and ts with available configuration files
